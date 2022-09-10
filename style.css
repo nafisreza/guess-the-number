@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #222;
+    color: #eaeaea;
+    font-size: 2rem;
+    overflow: hidden;
+}
+
+.btn{
+    font-family: inherit;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn:hover{
+    background-color: teal;
+    color: white;
+}
+
+.game-screen{
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.game-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-title{
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.game-correct-answer{
+    background-color: teal;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 3px;
+    align-self: center;
+    display: grid;
+    place-items: center;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.game-guess-screen{
+    display: flex;
+    justify-content: space-between;
+}
+
+.check-screen{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.input-number{
+    font-size: 3.5rem;
+    max-width: 10rem;
+    color: #222;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.check{
+    width: 10rem;
+}
+
+.score-screen{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-weight: bold;
+}
+

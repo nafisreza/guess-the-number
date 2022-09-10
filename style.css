@@ -25,7 +25,7 @@ body{
 }
 
 .btn:hover{
-    background-color: teal;
+    background-color: salmon;
     color: white;
 }
 
@@ -51,7 +51,7 @@ body{
 }
 
 .game-correct-answer{
-    background-color: teal;
+    background-color: salmon;
     height: 10rem;
     width: 10rem;
     border-radius: 3px;
@@ -106,4 +106,19 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+/* Confetti styles */
+#my-canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    visibility: hidden;
+    z-index: 5;
+}
+
+.play-again{
+    z-index: 10;
 }

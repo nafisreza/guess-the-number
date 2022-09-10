@@ -34,7 +34,9 @@ check.addEventListener('click', function () {
         displayGuessingText("Correct Answer!")
         correctAns.textContent = SECRET_NUMBER
         correctAns.style.backgroundColor = "#222"
-        document.body.style.backgroundColor = "teal"
+        document.body.style.backgroundColor = "salmon"
+
+        confettis.style.visibility = 'visible';
 
         if (SCORE > HIGH_SCORE) {
             HIGH_SCORE = SCORE
@@ -66,8 +68,18 @@ playAgain.addEventListener('click', function () {
 
     displayGuessingText("Start guessing...")
     document.body.style.backgroundColor = "#222"
-    correctAns.style.backgroundColor = "teal"
+    correctAns.style.backgroundColor = "salmon"
     correctAns.textContent = "?"
     input.value = ""
+
+    confettis.style.visibility = 'hidden';
+
  
 })
+
+// confetti animation
+var confettiSettings = { target: 'my-canvas' };
+var confetti = new ConfettiGenerator(confettiSettings);
+confetti.render();
+
+let confettis = document.querySelector("#my-canvas")
